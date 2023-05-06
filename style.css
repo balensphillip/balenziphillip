@@ -194,7 +194,6 @@ body {
 }
 
 #skills h1{ 
-    border-top: 0.0625rem #ffffff solid; 
     margin: 4rem;
     margin-top: 0;
     margin-bottom: 0;
@@ -212,7 +211,8 @@ body {
 }
 
 .wrapper{
-    border-radius: 1rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
     width: 82em;
     margin-top: 1rem;
     padding-top: 5rem;
@@ -222,6 +222,7 @@ body {
     justify-content: center;
     grid-template: 250px / 250px 250px 250px 250px 250px;
     background: #1f242d;
+    border-bottom: 0.0625rem #ffffff solid; 
 }
 
 .card{
@@ -309,7 +310,7 @@ footer a {
 }
 
 a:hover {
-  text-decoration: underline;
+  color: #d1e01f;
 }
 
 .footer-title {
@@ -318,6 +319,19 @@ a:hover {
   font-size: 1.375rem;
   padding-bottom: 0.625rem;
 }
+
+/* Footer legal */
+.footer-legal {
+    padding: 0.9375rem 1.875rem;
+    background-color: #0a0b0b;
+  }
+  
+  .footer-legal-list {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
 @media only screen and (min-width: 29.8125rem /*477px*/) {
   .footer-main {
@@ -330,39 +344,6 @@ a:hover {
       justify-content: space-evenly;
   }
 }
-
-/* Footer main */
-
-/* Footer social */
-.footer-social {
-  padding: 0 1.875rem 1.25rem;
-}
-
-.footer-social-list {
-  display: flex;
-  justify-content: center;
-  border-top: 0.0625rem #777 solid; 
-  padding-top: 1.25rem;
-}
-
-.footer-social-list li {
-  margin: 0.5rem;
-  font-size: 1.25rem;
-}
-
-/* Footer legal */
-.footer-legal {
-  padding: 0.9375rem 1.875rem;
-  background-color: #0a0b0b;
-}
-
-.footer-legal-list {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 
 /* keyframes animation */
 @keyframes slideRight {
