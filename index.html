@@ -4,17 +4,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">  
+    <link rel="stylesheet" href="style.css"> 
     <title>MyPortfolio</title>
   </head>
   <body>
     <header class="header">
       <div class="header-content">
-        <a href="#" class="logo">Portfolio.</a>
+        <div class="logo">logo</div>
         <nav class="navbar">
           <a href="#home" style="--i: 1" class="active">Home</a>
           <a href="#skills" style="--i: 2">Skills</a>
@@ -27,16 +27,16 @@
         <img src="/assets/phillip.jpg" alt="me" />
       </div>
       <div class="home-content">
-        <h3>Hello, I am</h3>
-        <h1>Balenzi Phillip</h1>
+        <h3>Hey,</h3>
+        <h1><span class="intro">I am</span> Balenzi Phillip</h1>
         <h3>
           and am a
-          <span class="professions">Software Developer / IT Support</span>
+          <span class="professions">Software Developer / IT Officer</span>
         </h3>
         <p>
-          I am a passionate IT Support / Software developer with the ability to
-          collaborate with customers to find viable optimal tech solutions.
-          Attentive to detail, proactive and motivated to learn with good
+          I am equipped with the skills to collaborate with customers
+          to provide optimal tech solutions as well as being attentive <br>
+          to detail and motivated to learn with good
           interpersonal and communication skills.
         </p>
         <div class="social-media">
@@ -48,49 +48,194 @@
         <a
           href="/assets/balenzi phillip-resume.pdf"
           download="balenzi phillip-resume.pdf"
-          class="btn"
-          >Download Resume(CV)</a
-        >
+          class="btn">Download Resume(CV)</a>
       </div>
     </section>
+    <section id="skills">
+        <h1>Skills</h1>
+        <div class="skills-container">
+            <div class="wrapper">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="/assets/browser.png" alt="">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title">HTML & CSS</span>
+                        <div class="rating">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star-half'></i>
+                        </div>               
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                        <img src="/assets/java-script.png" alt="">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title">Javascript</span>
+                        <div class="rating">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star-half'></i>
+                        </div>               
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                        <img src="/assets/react.png" alt="">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title">React</span>
+                        <div class="rating">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star-half'></i>
+                        </div>               
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                        <img src="/assets/node-js.png" alt="">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title">Node</span>
+                        <div class="rating">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star-half'></i>
+                        </div>               
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                        <img src="/assets/c-sharp.png" alt="">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title">C#</span>
+                        <div class="rating">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star-half' ></i>
+                        </div>               
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                        <img src="/assets/web.png" alt="">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title">ASP.NET</span>
+                        <div class="rating">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star-half' ></i>
+                        </div>               
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                        <img src="/assets/cicd.png" alt="">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title">CircoCI</span>
+                        <div class="rating">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star-half' ></i>
+                        </div>               
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                        <img src="/assets/figma (1).png" alt="">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title">Figma</span>
+                        <div class="rating">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star-half' ></i>
+                        </div>               
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                        <img src="/assets/github.png" alt="">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title">Git</span>
+                        <div class="rating">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star-half' ></i>
+                        </div>               
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                        <img src="/assets/lean.png" alt="">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title">Lean & Agile</span>
+                        <div class="rating">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star-half' ></i>
+                        </div>               
+                    </div>
+                </div>   
+            </div>
+        </div>
+    </section>
+    <footer id="contact">
+        <section class="footer-main"> 
+            <div class="footer-main-item">
+                <h2 class="footer-title">Services</h2>
+                <ul class="service-links">
+                    <li><a href="#">Web Design</a></li>
+                    <li><a href="#">UI/UX Design</a></li>
+                    <li><a href="#">IT Consultancy</a></li>
+                </ul>
+            </div>
+            <div class="footer-main-item">
+                <h2 class="footer-title">Contact</h2>
+                <ul>
+                    <li><a href="#"><i class="fas fa-phone"></i> +256775389237</a></li>
+                    <li><a href="#"><i class="fab fa-whatsapp"></i> +256755780352</a></li>
+                    <li><a href="#"><i class="fab fa-telegram"></i> +256755780352</a></li>
+                    <li><a href="#"><i class="fas fa-envelope-square"></i>  balensphillip7@gmail.com</a></li>
+                </ul>
+            </div>
+        </section> 
+        <!-- <section class="footer-social">
+            <ul class="footer-social-list">
+                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-github"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="#"><i class="fab fa-youtube"></i></a></li> 
+            </ul>
+        </section>  -->
+        <section class="footer-legal">
+            <ul class="footer-legal-list">
+                <li>&copy; 2023 Copyright Balenzi Phillip</li>
+            </ul>  
+        </section>
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>
 
-<!-- <a href="#" style="--i:5;"><i class="bx bxl-gmail"></i></a>
-          <a href="#" style="--i:6;"><i class="bx bxl-whatsapp"></i></a>
-          <a href="#" style="--i:8;"><i class="bx bxl-telegram"></i></a> -->
 
-<!-- <h2>Skills</h2>
-       <div class="skills-content">
-        <div class="skill">HTML & CSS</div>
-        <div class="skill">Javascript</div>
-        <div class="skill">React</div>
-        <div class="skill">Node</div>
-        <div class="skill">Git</div>
-        <div class="skill">Lean & Agile</div>
-        <div class="skill">CI/CD</div>
-        <div class="skill">UI/UX Design</div>
-       </div> -->
-
-<!-- <section id="skills">
-        <div class="box">
-          <div class="content">
-            <div class="card">
-              <div class="card-content">
-                <div class="image">
-                  <img src="/assets/balens.jpg" alt="">
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-    </section> -->
-
-<!-- <section id="contact">
-
-    </section>
-    <footer class="footer">
-
-    </footer> -->
