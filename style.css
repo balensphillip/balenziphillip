@@ -9,6 +9,7 @@
     /* colors */
     --color: #325967;
     --bg-color: #eae1e1;
+    --lemon-green: #d1e01f;
 }
 
 /* base */
@@ -29,18 +30,13 @@ body {
 .header-content {
     justify-content: space-between;
     text-align: center;
-    /* background: #1f242d; */
-    border-radius: 3.125rem;
-    margin-top: 15px;
     display: flex;
-    justify-content: space-between;
     padding: 1rem 10%; 
     width: 100%;
     position: fixed;
-    top: 0;
-    left: 0;
     align-items: center;
     z-index: 100; 
+    background: var(--color);
 }
 
 .logo {
@@ -51,11 +47,19 @@ body {
     cursor: default;
     opacity: 0;
     animation: slideTop .5s ease forwards;
+    font-family: 'Merriweather', serif;
+}
+
+.logo img{
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
 }
 
 .navbar a {
     display: inline-block;
     font-size: 1.5rem;
+    font-family: 'Merriweather', serif;
     color: #fff;
     text-decoration: none;
     font-weight: 1000;
@@ -67,7 +71,7 @@ body {
 }
 
 .navbar a:hover {
-    color:#d1e01f;
+    color:var(--lemon-green);
 } 
 
  /* CSS for home section */
@@ -101,13 +105,16 @@ body {
 }
 
 .home-content h3 span {
-    color: #d1e01f;
+    color: var(--lemon-green);
+    font-family: 'Merriweather', serif;
+    font-size: 1.8rem;
 }
 
 .home-content h1 {
-    color: #d1e01f;
-    font-size: 2.5rem;
-    font-weight: 700;
+    color: var(--lemon-green);
+    font-family: 'Merriweather', serif;
+    font-size: 2.3rem;
+    font-weight: 500;
     margin: -0.1875rem 0;
     opacity: 0;
     animation: slideRight 1s ease forwards;
@@ -138,10 +145,6 @@ body {
     animation-delay: 2s, 3s;
 }
 
-.home-image img:hover {
-    box-shadow: 0 0 2rem #d1e01f;
-}
-
 .social-media a {
     display: inline-flex;
     justify-content: center;
@@ -149,10 +152,10 @@ body {
     width: 2.5rem;
     height: 2.5rem;
     background: transparent;
-    border: 0.0625rem solid #d1e01f;
+    border: 0.0625rem solid var(--lemon-green);
     border-radius: 50%;
     font-size: 1.25rem;
-    color: #d1e01f;
+    color: var(--lemon-green);
     text-decoration: none;
     margin: 1.875rem 0.9375rem 1.875rem 0;
     transition: .5s ease;
@@ -162,15 +165,15 @@ body {
 }
 
 .social-media a:hover {
-    background: #d1e01f;
+    background: var(--lemon-green);
     color: #1f242d;
-    box-shadow: 0 0 1.25rem #d1e01f;
+    box-shadow: 0 0 1.25rem var(--lemon-green);
 }
 
 .btn {
     display: inline-block;
     padding: 0.75rem 1.75rem;
-    background: #d1e01f;
+    background: var(--lemon-green);
     border-radius: 2.5rem;
     font-size: 1rem;
     color: #1f242d;
@@ -183,68 +186,67 @@ body {
 }
 
 .btn:hover{
-    box-shadow: 0 0 0.625rem #d1e01f;
+    box-shadow: 0 0 0.625rem var(--lemon-green);
 }
 
  /* CSS for skills section */
 #skills{
     width: 100%;
     height: 100vh;
-    background: #1f242d;
 }
 
-#skills h1{ 
-    margin: 4rem;
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-top: 1rem;
+.skills-container p{ 
+    font-size: 1.5rem;
+    font-weight: 1000;
     display: flex;
     justify-content: center;
     align-items: center; 
-}
+    font-family: 'Merriweather', serif;
+    color: var(--lemon-green);
+} 
 
 .skills-container{
     position: relative;
-    display: flex;
+    display: grid;
     justify-content: center;
     align-items: center; 
+    margin: 5rem;
+    padding: 3rem;
 }
 
 .wrapper{
-    border-top-left-radius: 1rem;
-    border-top-right-radius: 1rem;
-    width: 82em;
+    border-radius: 1rem;
+    width: 60em;
     margin-top: 1rem;
+    margin-bottom: 1rem;
     padding-top: 5rem;
-    height: 44em;
+    height: 30em;
     display: grid;
     align-items: center;
     justify-content: center;
-    grid-template: 250px / 250px 250px 250px 250px 250px;
-    background: #1f242d;
-    border-bottom: 0.0625rem #ffffff solid; 
+    grid-template: 0px / 150px 150px 150px 150px 230px;
+    align-content: space-between;
 }
 
 .card{
-    margin: 2rem;
-    width: 12em;
-    height: 16em;
-    background: #fff;
-    border-radius: 2em;
-    box-shadow: 0 0 2em rgba(0,0,0, .2);
-    padding: 0.5em 0.25em;
+    margin: 3rem;
+    width: 8em;
+    height: 10em;
+    padding: 0.25em 0.12em;
     display:  flex;
     align-items: center;
     flex-direction: column;
+    animation: slideBottom 1s ease forwards;
 }
 
 .card-image{
-    width: 9em;
-    height: 9em;
+    width: 6em;
+    height: 6em;
     border-radius: 50%;
     border: 5px solid var(--color);
     padding: 3px;
     margin-bottom: 2em;
+    background: var(--bg-color);
 }
 
 .card-image img{
@@ -264,19 +266,12 @@ body {
     font-size: 1.2rem;
     font-weight: 500;
     position: relative;
-    top: .1em;
+    top: .02em;
+    color: var(--bg-color)
 }
+
 
 /* CSS for footer */
-.container p {
-    display: flex;
-    justify-content: center;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    font-size: 2rem;
-    color: #fff;
-}
-
 footer {
   background: #1f242d;
   color: #f3ecec;
@@ -287,12 +282,18 @@ footer {
 .footer-main {
   display: flex;
   flex-wrap: wrap;
+  animation: slideTop 1s ease forwards;
+  animation-delay: calc(.2s * var(--i));
 }
 
 .footer-main-item {
   padding: 1rem;
   margin-bottom: 1.5rem;
   min-width: 12.5rem;
+}
+
+.footer-main-item h2{
+    color: var(--lemon-green);
 }
 
 .service-links{
@@ -310,20 +311,21 @@ footer a {
 }
 
 a:hover {
-  color: #d1e01f;
+  color: var(--lemon-green);
 }
 
 .footer-title {
+  font-size: 1.5rem;
+  font-weight: 1000;
   color: #fff;
   font-family: 'Merriweather', serif;
-  font-size: 1.375rem;
   padding-bottom: 0.625rem;
 }
 
 /* Footer legal */
 .footer-legal {
     padding: 0.9375rem 1.875rem;
-    background-color: #0a0b0b;
+    background-color: var(--color);
   }
   
   .footer-legal-list {
@@ -334,13 +336,31 @@ a:hover {
   }
 
 @media only screen and (min-width: 29.8125rem /*477px*/) {
-  .footer-main {
+    .header-content {
+
+    }
+    #home {
+
+    }
+    #skills {
+
+    }
+    .footer-main {
       justify-content: space-around;
   }
 }
 
 @media only screen and (min-width: 77.5rem /*1240px*/ ) {
-  .footer-main {
+    .header-content {
+
+    }
+    #home {
+
+    }
+    #skills {
+        
+    }
+    .footer-main {
       justify-content: space-evenly;
   }
 }
