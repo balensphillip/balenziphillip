@@ -82,12 +82,14 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 4.375rem 7% 0;
+    padding: 3.375rem 7% 0;
+    /* background: plum; */
     background: #1f242d;
 }
 
 .home-content {
-    max-width: 37.5rem; 
+    max-width: 36.5rem; 
+    /* background: red; */
 }
 
 .home-content h3 {
@@ -135,6 +137,8 @@ body {
 
 .home-image{
     color: #fff;
+    /* background: palevioletred; */
+    width: 25.125rem;
 } 
 
 .home-image img {
@@ -276,20 +280,28 @@ footer {
   background: #1f242d;
   color: #f3ecec;
   line-height: 1.5;
+  justify-content: center;
+  align-items: center;
+  /* display: grid; */
 }
 
-/* Footer main */
 .footer-main {
   display: flex;
-  flex-wrap: wrap;
+  justify-content: center;
+  /* flex-wrap: wrap; */
+  /* align-content: space-around; */
   animation: slideTop 1s ease forwards;
   animation-delay: calc(.2s * var(--i));
+  /* background: #1fa0e0; */
+  /* width: 60rem; */
 }
 
 .footer-main-item {
+  /* background: palevioletred; */
   padding: 1rem;
+  margin-top: .5rem;
   margin-bottom: 1.5rem;
-  min-width: 12.5rem;
+  width: 15rem;
 }
 
 .footer-main-item h2{
@@ -326,6 +338,7 @@ a:hover {
 .footer-legal {
     padding: 0.9375rem 1.875rem;
     background-color: var(--color);
+    /* width: 100vw; */
   }
   
   .footer-legal-list {
@@ -335,31 +348,33 @@ a:hover {
     justify-content: center;
   }
 
-@media only screen and (min-width: 29.8125rem /*477px*/) {
-    .header-content {
-
+@media only screen and (min-width: 400px) {
+    .navbar {
+        display: grid;
     }
     #home {
-
+        display: grid;
+        padding-top: 9rem;
     }
-    #skills {
-
+    .home-content {
+        max-width: 25.125rem;
     }
-    .footer-main {
+
+    /* .footer-main {
       justify-content: space-around;
-  }
+  }  */
 }
 
 @media only screen and (min-width: 77.5rem /*1240px*/ ) {
-    .header-content {
-
+    .navbar {
+        display: flex;
     }
     #home {
-
+        display: flex;
     }
-    #skills {
+    /* #skills {
         
-    }
+    } */
     .footer-main {
       justify-content: space-evenly;
   }
